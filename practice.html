@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My practice site</title>
+		<meta name="viewport" content="width=display-width, initial-scale=1">
+	<style>
+	* {
+		box-sizing: border-box;
+	}	
+
+body {
+	font-family: Georgia;
+	padding: 10px;
+	background-color: lightpink;
+	color: darkorchid;
+}
+
+.header {
+	padding: 30px;
+	text-align: center;
+	background: lightcoral;
+}
+
+.header h1 {
+	font-size: 75px;
+	font-family: shrikhand;
+	color: white;
+}
+
+.header h1:hover {
+	box-shadow:  0 8px 12px 0 rgb(34, 60, 80, 0.16);
+}	
+
+.header p {
+	font-family: arial;
+	font-size: 25px;
+	color: white;
+	background-color: deeppink;
+}
+
+.header p:hover {
+	background-color: white;
+	color: purple;
+}
+
+.leftcolumn {
+	float: left;
+	width: 75%;	
+}
+
+.rightcolumn {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+	border-style: dotted;
+	border-width: 5px;
+	border-color: mediumpurple;
+}
+
+.fakeimg {
+	background-color: lightblue;
+	width: 75%;
+	padding: 20px;
+}
+
+.fakeimg:hover {
+	background-color: orange;
+	opacity: 25%;
+}	
+
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer {
+	padding: 20px;
+	text-align: center;
+	background-color: lightcoral;
+	margin-top: 20px;
+	font-family: shrikhand;
+	color: white;
+}
+
+.footer:hover {
+	background-color: hotpink;
+	color: white;
+}
+
+form input, textarea {
+	padding:  5px;
+	border-radius: 5px;
+	width: 240px;
+}
+
+form input[text="submit"] {
+	width: 250px;
+}
+
+.submit-button-wrapper {
+	margin; 20px 0: ;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  background-color: orange;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: hotpink;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: deeppink;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {color: hotpink; background-color: white;}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>	
+</head>
+<body>
+	<div class="header">
+		<h1>SporTee Chic</h1>
+		<p>Trendy sports apparel for women made by women</p>
+	</div>
+
+
+<ul>
+	 <li class="dropdown">
+    	<a href="javascript:void(0)" 
+   class="dropbtn">NFL</a>
+    	<div class="dropdown-content">
+      		<a href="#">Eagles</a>
+      		<a href="#">Bears</a>
+      		<a href="#">49ers</a>
+    	</div>
+  	</li>
+
+	 <li class="dropdown">
+    	<a href="javascript:void(0)" 
+   class="dropbtn">NBA</a>
+    	<div class="dropdown-content">
+      		<a href="#">Sixers</a>
+      		<a href="#">Warriors</a>
+      		<a href="#">Lakers</a>
+    	</div>
+  	</li>
+
+	 <li class="dropdown">
+    	<a href="javascript:void(0)" 
+   class="dropbtn">MLB</a>
+    	<div class="dropdown-content">
+      		<a href="#">Phillies</a>
+      		<a href="#">Dodgers</a>
+      		<a href="#">Mets</a>
+    	</div>
+  	</li>
+
+	 <li class="dropdown">
+    	<a href="javascript:void(0)" 
+   class="dropbtn">NHL</a>
+    	<div class="dropdown-content">
+      		<a href="#">Flyers</a>
+      		<a href="#">Predators</a>
+      		<a href="#">Lighting</a>
+    	</div>
+  	</li>
+
+  	<li><a href="#" style="float:right">Contact</a></li>
+</ul>
+
+<div class="row">
+	<div class="leftcolumn">
+		<div class="card">
+			<h2>Best Sellers</h2>
+			<h5>Here are all of our best sellers for the 2022 NFL season!</h5>
+			<div class="fakeimg" style="height:200px;">Image</div>	
+			<p>Of course the best seller for 2022 is the Philadelphia Eagles sweatshirt because they are about to be Super Bowl Champs! Go Birds!</p>
+		</div>
+		<div class="card">
+			<h2>NBA 22-23 Season</h2>
+			<h5>The NBA has just started check out our favorite shirts for basketball!</h5>
+			<div class="fakeimg" style="height:200px:">Image</div>
+			<p>Our favorite team is obviously the 76ers. Trust the Process!</p>	
+		</div>
+	</div>
+
+	<div class="rightcolumn">
+		<div class="card">
+			<h2>About SporTee Chic</h2>
+			<div class="fakeimg" style="height:100px;">Image</div>
+			<p>SporTee Chic was	created in 2021 by Taylor. As just a fun hobby and learning process, Taylor never thought it would grow to what it is today. Sportee chic has made thousands of fans smile with the fun, unique, vintage-styled sports teams apparel.</p>
+		</div>	
+		<div class="card">
+			<h3>Shipping and Returns</h3>
+			<p>Production can take 5 business days. Shipping is via USPS and very fast. I do not accept returns.</p>
+		</div>
+	</div>
+</div>		
+
+<div class="footer">
+	<h2>Thank you for shopping at SporTee Chic!</h2>
+	<div>
+				<form action="#">
+					<label for="email">
+						<h4>Email</h4>
+						<input id="email" placeholder="Enter your email"/>
+					</label>
+					<label for="messages">
+						<h4>Message</h4>
+						<textarea id="message">Your Message</textarea>
+					</label>
+					<div class="submit-button-wrapper">
+						<input id="submit-button" type="submit" value="send message">
+					</div>	 				
+				</form>	 		
+			</div>	
+</div>
+	
+</body>
+</html>					
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
